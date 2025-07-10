@@ -126,6 +126,6 @@ The Pathway team for the real-time computation engine
 📫 Contact
 👤 Name: Your Name
 
-📧 Email: yourname@example.com
+📧 Email: mahi967232@gmail.com
 
-🌐 GitHub: github.com/yourusername
+🌐 GitHub: github.com/mahi0097
