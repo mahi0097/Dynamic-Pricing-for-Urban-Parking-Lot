@@ -28,13 +28,19 @@ We developed a **streaming pipeline using Pathway** that dynamically updates par
 ---
 
 ## 🔧 Project Architecture & Workflow
+graph TD
+    A[CSV Input Data (14 Lots)] --> B[Data Preprocessing]
+    B --> C[Feature Engineering]
+    C --> D[Real-time Data Simulation]
+    D --> E[Dynamic Pricing Model]
+    E --> F[Model 1: Baseline Pricing]
+    E --> G[Model 2: Demand-Based Pricing]
+    E --> H[Model 3: Competition-Aware Pricing]
+    F --> I[Real-time Price Output]
+    G --> I
+    H --> I
+```
 
-```mermaid
-flowchart TD
-    A[CSV Input Data (14 Lots)] --> B[Pathway Streaming Engine]
-    B --> C[Real-Time Feature Processor]
-    C --> D[Dynamic Pricing Engine]
-    D --> E[Bokeh Visualization + Console Output]
 🧩 Modules:
 Ingestion: Stream 14-lot data (8 AM to 4:30 PM daily) into a real-time processor
 
